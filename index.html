@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>English PBL - Chinoy Identity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<div id="app">
+  <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i>Everyday Tsinoy</i>
+      </a>
+      <button class="navbar-toggler bg-light" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a @click.prevent="$router.push('/')" class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a @click.prevent="$router.push('/quiz-yourself')" class="nav-link" href="#">Quiz Yourself</a>
+          </li>
+          <li class="nav-item">
+            <a @click.prevent="$router.push('/about')" class="nav-link" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <router-view></router-view>
+
+</div>
+
+<script id="home-template" type="text/template">
+  <div class="container-fluid p-0">
+
+  <div class="jumbotron-header" data-aos="fade-in">
+      <div class="container text-center">
+        <div class="header-glass-card" data-aos="zoom-in" data-aos-delay="200">
+          <h1 class="display-3 fw-bold text-white mb-3">Everyday Tsinoy</h1>
+          <p class="col-md-10 mx-auto fs-5 text-white" style="opacity: 0.9">
+            Exploring the rich tapestry of the Filipino-Chinese Identity
+          </p>
+          <hr class="my-4 border-white opacity-25">
+          <p class="small text-white-50 mb-4">Group 1 • English PBL</p>
+          <button class="btn btn-brand btn-lg px-5 shadow-lg" type="button" @click="scrollToContent">
+            Begin the Journey
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <section id="content-target" class="mb-5">
+        <h2 class="section-title" data-aos="fade-down">Cultural Highlights</h2>
+
+        <div class="row info-row g-5">
+          <div class="col-md-6 order-2 order-md-1" data-aos="fade-right">
+            <h3>Cultural Heritage</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lorem at diam ultricies pharetra eu id odio. Proin eleifend ut mauris nec feugiat. Proin at orci felis. Integer eu pretium turpis. Nullam consectetur accumsan egestas. Mauris ac molestie turpis. Aliquam sit amet lectus ultrices, consequat odio vitae, interdum sem. Donec ipsum nibh, placerat et est nec, luctus dapibus purus. Praesent posuere, neque non scelerisque lobortis, neque eros gravida enim, blandit mattis neque quam in risus.</p>
+            <button class="btn btn-outline-brand btn-sm">Read More</button>
+          </div>
+          <div class="col-md-6 order-1 order-md-2 mb-3 mb-md-0" data-aos="fade-left">
+            <img src="https://picsum.photos/id/1015/600/400" alt="Scenery" class="info-img">
+          </div>
+        </div>
+
+        <div class="row info-row g-5">
+          <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-right">
+            <img src="https://picsum.photos/id/1033/600/400" alt="Food" class="info-img">
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <h3>Culinary Fusion</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lorem at diam ultricies pharetra eu id odio. Proin eleifend ut mauris nec feugiat. Proin at orci felis. Integer eu pretium turpis. Nullam consectetur accumsan egestas. Mauris ac molestie turpis. Aliquam sit amet lectus ultrices, consequat odio vitae, interdum sem. Donec ipsum nibh, placerat et est nec, luctus dapibus purus. Praesent posuere, neque non scelerisque lobortis, neque eros gravida enim, blandit mattis neque quam in risus.</p>
+          </div>
+        </div>
+
+        <div class="row info-row g-5">
+          <div class="col-md-6 order-2 order-md-1" data-aos="fade-right">
+            <h3>Modern Business</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lorem at diam ultricies pharetra eu id odio. Proin eleifend ut mauris nec feugiat. Proin at orci felis. Integer eu pretium turpis. Nullam consectetur accumsan egestas. Mauris ac molestie turpis. Aliquam sit amet lectus ultrices, consequat odio vitae, interdum sem. Donec ipsum nibh, placerat et est nec, luctus dapibus purus. Praesent posuere, neque non scelerisque lobortis, neque eros gravida enim, blandit mattis neque quam in risus.</p>
+          </div>
+          <div class="col-md-6 order-1 order-md-2 mb-3 mb-md-0" data-aos="fade-left">
+            <img src="https://picsum.photos/id/1060/600/400" alt="Work" class="info-img">
+          </div>
+        </div>
+
+        <div class="row info-row g-5">
+          <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-right">
+            <img src="https://picsum.photos/id/1049/600/400" alt="Art" class="info-img">
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <h3>Arts & Calligraphy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis lorem at diam ultricies pharetra eu id odio. Proin eleifend ut mauris nec feugiat. Proin at orci felis. Integer eu pretium turpis. Nullam consectetur accumsan egestas. Mauris ac molestie turpis. Aliquam sit amet lectus ultrices, consequat odio vitae, interdum sem. Donec ipsum nibh, placerat et est nec, luctus dapibus purus. Praesent posuere, neque non scelerisque lobortis, neque eros gravida enim, blandit mattis neque quam in risus.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="timeline-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-down">Historical Timeline</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-container left" data-aos="fade-right">
+            <div class="content">
+              <span class="timeline-date">900s - Pre-Colonial</span>
+              <img src="https://picsum.photos/id/1050/600/300" alt="History 1" class="timeline-img">
+              <h4>Early Trade</h4>
+              <p>Long before Spanish colonization, Chinese merchants were already trading ceramics and silk with the natives of the Philippines.</p>
+            </div>
+          </div>
+
+          <div class="timeline-container right" data-aos="fade-left">
+            <div class="content">
+              <span class="timeline-date">1594 - Binondo Established</span>
+              <img src="https://picsum.photos/id/1035/600/300" alt="History 2" class="timeline-img">
+              <h4>The Parian</h4>
+              <p>The Spanish Governor-General established Binondo as a permanent settlement for Catholic Chinese, creating the world's oldest Chinatown.</p>
+            </div>
+          </div>
+
+          <div class="timeline-container left" data-aos="fade-right">
+            <div class="content">
+              <span class="timeline-date">1900s - Integration</span>
+              <img src="https://picsum.photos/id/1055/600/300" alt="History 3" class="timeline-img">
+              <h4>Rise of Tsinoy</h4>
+              <p>Chinese schools and newspapers flourished. The term "Tsinoy" began to emerge as a distinct identity blending both cultures.</p>
+            </div>
+          </div>
+
+          <div class="timeline-container right" data-aos="fade-left">
+            <div class="content">
+              <span class="timeline-date">Present Day</span>
+              <img src="https://picsum.photos/id/1016/600/300" alt="History 4" class="timeline-img">
+              <h4>Modern Identity</h4>
+              <p>Today, the Filipino-Chinese community is a pillar of the economy and culture, celebrating a unique dual heritage.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container py-5">
+      <section>
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 mb-3">
+            <h4><i class="bi bi-images" style="color: var(--brand-salmon)"></i> Gallery</h4>
+          </div>
+          <div class="col-12">
+            <div id="carouselExampleCaptions" class="carousel slide shadow rounded" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+              </div>
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/id/1018/1200/500" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white">Family Gatherings</h5>
+                    <p class="text-white">Celebrating the festivals together.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/id/1019/1200/500" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white">Beautiful Culture</h5>
+                    <p class="text-white">I love Six Seven</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/id/1025/1200/500" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white">Business and Being Rich</h5>
+                    <p class="text-white">The hustle and bustle of daily trade.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</script>
+
+<script id="quiz-template" type="text/template">
+  <div class="container py-5 mt-5">
+    <section>
+        <h2 class="section-title" data-aos="fade-down">Interactive Content</h2>
+        <div class="row mb-5 g-4">
+          <div class="col-12 mb-2" data-aos="fade-in">
+            <h4><i class="bi bi-question-circle-fill" style="color: var(--brand-salmon)"></i> Daily Trivia</h4>
+          </div>
+
+          <div class="col-lg-4" v-for="(q, index) in quiz" :key="index" data-aos="fade-up" :data-aos-delay="index * 100">
+            <div class="card quiz-card p-4">
+              <h5 class="card-title mb-4" style="color: var(--brand-blue)">{{ q.question }}</h5>
+              <div class="options">
+                <div v-for="(opt, optIndex) in q.options" :key="optIndex">
+                  <input type="radio" :name="'q'+index" :id="'q'+index+'o'+optIndex" :value="opt" v-model="q.selected" class="d-none">
+                  <label :for="'q'+index+'o'+optIndex" class="option-label">
+                    {{ opt }}
+                  </label>
+                </div>
+              </div>
+              <div class="mt-4">
+                <button class="btn btn-brand w-100" @click="checkAnswer(index)">Check Answer</button>
+              </div>
+              <div v-if="q.status" class="mt-3 alert p-2 text-center"
+                   :class="q.status === 'Correct!' ? 'alert-success' : 'alert-danger'">
+                {{ q.status }}
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+</script>
+
+<script id="about-template" type="text/template">
+  <div class="container py-5 mt-5">
+    <section>
+      <div class="p-5 mb-4 rounded-3 border shadow-sm" style="background-color: white;" data-aos="fade-down">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold" style="color: var(--brand-blue)">About Chinoy Central</h1>
+          <p class="col-md-8 fs-4" style="color: var(--brand-purple)">We are a digital hub dedicated to bridging cultures and generations.</p>
+          <a class="btn btn-brand btn-lg" href="#" @click.prevent="$router.push('/')">Back to Home</a>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="h-100 p-5 text-white rounded-3" style="background-color: var(--brand-blue)">
+            <h2>Our Mission</h2>
+            <p>To provide a platform where tradition meets technology, an archive for all things Tsinoy.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="h-100 p-5 bg-white border rounded-3">
+            <h2 style="color: var(--brand-mauve)">Contact Us</h2>
+            <p>Located in Xavier School, come to Room J503 to chill or say hi!</p>
+            <button class="btn btn-outline-brand" type="button">Contact Form</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</script>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
