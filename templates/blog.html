@@ -1,0 +1,19 @@
+<div class="container py-5 mt-5">
+<div class="blog-page">
+    <article v-if="currentPost" class="blog-item" data-aos="fade-up">
+      <header class="blog-header">
+        <span class="blog-author text-center">Written by {{ currentPost.author }}</span>
+        <h1 class="blog-title">{{ currentPost.title }}</h1>
+      </header>
+
+      <div class="blog-content" v-html="currentPost.content"></div>
+
+      <router-link to="/blogs" class="back-link">← View all blogs</router-link>
+    </article>
+
+    <div v-else class="error-state">
+      <h2>Post not found</h2>
+      <router-link to="/blogs">Return to blog list</router-link>
+    </div>
+  </div>
+</div>

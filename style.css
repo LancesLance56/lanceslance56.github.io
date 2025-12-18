@@ -4,13 +4,23 @@
   --brand-mauve: #c06c84;
   --brand-purple: #6c5b7b;
   --brand-blue: #355c7d;
+  --brand-text-white: #fff;
+  --brand-text-black: #000;]
+  --light-bg: #fdfdfd;
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: rgba(72, 73, 213, 0.61);
+  background-image:
+    radial-gradient(at 0% 0%, var(--brand-salmon) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, var(--brand-mauve) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, var(--brand-peach) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, var(--brand-purple) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, var(--brand-blue) 0px, transparent 50%);
   color: var(--brand-purple);
   padding-top: 0;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, .navbar-brand {
@@ -18,16 +28,53 @@ h1, h2, h3, h4, h5, .navbar-brand {
   font-weight: 700;
 }
 
+.navbar {
+  margin-top: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--brand-salmon) !important;
+  border-radius: 20px;
+  width: 90%;
+  left: 50% !important;
+  transform: translateX(-50%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+}
+
+.navbar.scrolled {
+  width: 100%;
+  margin-top: 0;
+  border-radius: 0;
+  background: var(--brand-mauve) !important;
+  border: none !important;
+}
+
+.glass-navbar {
+  background: var(--brand-purple) !important; /* Brand Blue with Opacity */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: var(--brand-peach) !important;
+  font-size: 1.5rem;
+}
+
 .nav-link {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--brand-peach) !important;
+  text-shadow: 0 0 10px rgba(248, 177, 149, 0.4);
 }
 
-/* --- The Unique Header: Animated Mesh Gradient --- */
 .jumbotron-header {
   position: relative;
   margin: 0;
@@ -35,19 +82,8 @@ h1, h2, h3, h4, h5, .navbar-brand {
   padding-bottom: 100px !important;
   width: 100%;
   overflow: hidden;
-  border-radius: 0 0 50px 50px !important; /* Elegant rounded bottom */
-
-  /* Mesh Gradient using your specific palette */
-  background-color: var(--brand-blue);
-  background-image:
-    radial-gradient(at 0% 0%, var(--brand-salmon) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, var(--brand-mauve) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, var(--brand-peach) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, var(--brand-purple) 0px, transparent 50%),
-    radial-gradient(at 50% 50%, var(--brand-blue) 0px, transparent 50%);
   background-size: 200% 200%;
   animation: meshGradient 15s ease infinite;
-  box-shadow: 0 20px 40px rgba(53, 92, 125, 0.2);
 }
 
 @keyframes meshGradient {
@@ -56,32 +92,17 @@ h1, h2, h3, h4, h5, .navbar-brand {
   100% { background-position: 0% 50%; }
 }
 
-/* Sub-header glass effect for text clarity */
 .header-glass-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 24px;
-  padding: 40px;
+  padding: 40px 70px;
   margin: auto;
   display: inline-block;
 }
 
-.navbar {
-  width: 100%;
-  margin-top: 0;
-  border-radius: 0;
-  background: rgba(53, 92, 125, 0.95) !important;
-}
-
-.navbar-brand {
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  color: var(--brand-peach) !important;
-}
-
-/* --- Content & Components --- */
 .section-title {
   border-left: 5px solid var(--brand-salmon);
   padding-left: 15px;
@@ -99,6 +120,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
+  border: 2px solid var(--brand-salmon);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s ease-out, transform 0.5s ease-out;
 }
@@ -109,7 +131,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
 }
 
 .btn-brand {
-  background-color: var(--brand-salmon);
+  background-color: var(--brand-text-white);
   color: white;
   border: none;
   transition: transform 0.2s;
@@ -122,7 +144,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
 }
 
 .btn-outline-brand {
-  color: var(--brand-salmon);
+  color: var(--brand-text-white);
   border-color: var(--brand-salmon);
 }
 
@@ -172,11 +194,6 @@ input[type="radio"]:checked + .option-label {
   transition: color 0.3s;
 }
 
-.nav-link:hover,
-.nav-link.active {
-  color: var(--brand-peach) !important;
-}
-
 .section-title {
   border-left: 5px solid var(--brand-salmon);
   padding-left: 15px;
@@ -184,7 +201,6 @@ input[type="radio"]:checked + .option-label {
   margin-top: 60px;
 }
 
-/* --- Original "Images with Text" Styles --- */
 .info-row {
   margin-bottom: 60px;
   align-items: center;
@@ -204,7 +220,6 @@ input[type="radio"]:checked + .option-label {
   transform: translateY(-10px);
 }
 
-/* --- Vertical Timeline Implementation (No Overflow) --- */
 .timeline-section {
   position: relative;
   background: inherit;
@@ -217,12 +232,11 @@ input[type="radio"]:checked + .option-label {
   margin: 0 auto;
 }
 
-/* The vertical line */
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background: linear-gradient(180deg, var(--brand-peach), var(--brand-salmon), var(--brand-mauve));
+  background: linear-gradient(180deg, var(--brand-peach), var(--brand-salmon), var(--brand-purple));
   top: 0;
   bottom: 0;
   left: 50%;
@@ -268,15 +282,14 @@ input[type="radio"]:checked + .option-label {
 
 .content {
   padding: 25px;
-  background: var(--card-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
   border-left: 5px solid var(--brand-blue);
   position: relative;
   border-radius: 12px;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  background-color: rgba(256, 256, 256, 0.9);
 }
 
 .content:hover {
@@ -349,7 +362,6 @@ input[type="radio"]:checked + .option-label {
   color: white;
 }
 
-/* --- Quiz & Carousel --- */
 .quiz-card {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 15px;
@@ -396,4 +408,116 @@ input[type="radio"]:checked + .option-label {
   background: rgba(53, 92, 125, 0.8);
   border-radius: 10px;
   padding: 20px;
+}
+
+p, h2, h3, h4, h5, h6 {
+  color: var(--brand-text-white);
+}
+
+.timeline p, h4, h5 {
+  color: var(--brand-text-black);
+}
+
+.text-shadow-purple {
+  text-shadow: 3px 3px var(--brand-purple);
+}
+
+.text-shadow-mauve {
+  text-shadow: 3px 3px var(--brand-mauve);
+}
+
+.back-btn {
+    background: var(--brand-salmon);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+}
+
+.blog-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog-item {
+  margin-bottom: 40px;
+}
+
+.blog-author {
+  display: block;
+  font-family: monospace;
+  color: var(--brand-text-white);
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.blog-title {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  color: var(--brand-text-white);
+  text-shadow: 2px 2px 4px var(--brand-salmon);
+}
+
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--brand-text-white);
+  margin-bottom: 20px;
+}
+
+.separator {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
 }
