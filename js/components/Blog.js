@@ -15,6 +15,7 @@ export default {
             <p>When many Chinese families migrated to the Philippines, they integrated some of their dishes with some modifications. One example of this is Lumpiang Shanghai, a classic Filipino dish; its etymology is of Hokkien origin however the dish was mainly developed in the Philippines after Chinese spring rolls mixed with Hispanic and Filipino styles of cooking based on the ingredients available in the Philippines.</p>
             <p>Flavor fusion is a common theme in the Chinese community where Chinese dishes have small modifications to match the local taste. A popular example of this is 'hopia' cake, a Chinese sweet dish traditionally filled with bean mongo, but can also be found with ube filling in Chinoy cuisine. Another example is fried siopao, a fried twist on the chinese traditional steam bun.</p>
             <p>During celebrations like Chinese New Year, the family reunion dinner has a specific selection of Chinese or Chinoy food because they each have their own symbolism and meaning. Dumplings resemble ancient ingots symbolizing wealth and prosperity and longevity noodles are eaten uncut to ensure a long, healthy life. A classic dessert dish is Tangyuan, a sweet dessert made from glutinous rice to represent family unity.</p>
+            <img src="https://images.chinahighlights.com/allpicture/2018/03/840e912f8b7c47aca7eb0b0e.jpg" alt="symbolismses" class="my-5 rounded justify-center items-center" width="100%">
             
             <h4 class="text-white">Common Misunderstandings</h4>
             <ul>
