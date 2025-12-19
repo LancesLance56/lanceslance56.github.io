@@ -29,6 +29,13 @@ export default {
             <blockquote class="reflection">
               <strong>Reflection:</strong> Maintaining a good relationship with one's heritage helps ground one's identity which is especially relevant today where metropolitan areas are diversifying rapidly. This strong sense of heritage helps build trust and confidence that one can build bridges with others from another community. Understanding history and context also helps one understand others beliefs and actions.
             </blockquote>
+
+            <h4 class="text-white">References</h4>
+            <div style="font-size: 0.9em; word-break: break-word;">
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Lieu, K. (2024, February 11). <em>Lumpia Shanghai: The history behind the Filipino egg Roll.</em> Tasting Table. https://www.tastingtable.com/1511068/lumpiang-shanghai-filipino-egg-roll-history/</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Shamimi, M. (2025, August 13). <em>Chinese New Year foods and the meaning behind them.</em> United Dumplings. https://www.uniteddumplings.com/blogs/news/chinese-new-year-foods-and-the-meaning-behind-them</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Tan, R. (1991). <em>Participation of the Philippines in the Nanhai trade: 9th - 16th Centuries.</em> Silk Roads Programme. https://en.unesco.org/silkroad/knowledge-bank/participation-philippines-nanhai-trade-9th-16th-centuries</p>
+            </div>
           `
         },
         {
@@ -54,6 +61,13 @@ export default {
             <blockquote class="reflection">
               <strong>Reflection:</strong> Maintaining a positive relationship with our cultural history is essential because it allows us to understand who we are and where we came from. In a diverse society, cultural traditions help us make good decisions and respect others. The Filchi work ethic instills ideals that are applicable not only in business but also in everyday life. Preserving our heritage teaches us to respect both our own and other people's cultures. This helps to create a more respectful and cohesive society.
             </blockquote>
+
+            <h4 class="text-white">References</h4>
+            <div style="font-size: 0.9em; word-break: break-word;">
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Ang See, T. (1997). <em>The Chinese in the Philippines: Problems and perspectives.</em> Kaisa Para sa Kaunlaran.</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Go, B. S. (2004). <em>The Chinese and the Philippine economy.</em> Ateneo de Manila University Press.</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Wickberg, E. (2000). <em>The Chinese in Philippine life, 1850-1898.</em> Ateneo de Manila University Press.</p>
+            </div>
           `
         },
         {
@@ -81,6 +95,14 @@ export default {
             <blockquote class="reflection">
               <strong>Reflection:</strong> In a society majorly affected by globalization, it is important that we as Chinese-Filipinos maintain connection to our culture, by acknowledging the importance of the Hokkien language and making consistent efforts to use the said language. Today’s Fujian descent Chinese-Filipino youth are at risk of forgetting how to speak Hokkien, with limited resources to make use of it and with the increase in communication through Mandarin, English and Tagalog. Appreciating one’s roots allows for a better understanding of the self and a greater feeling of belongingness knowing that your roots, beliefs and values can be traced back in time and are shared between people. The Hokkien language acts as a catalyst to this appreciation, and acts as one way for us to keep in touch with our roots — mainly through a shared form of communication, with a deep and rich history on the survival of the Filipino-Chinese culture. Forgetting this valuable aspect with time and a lack of practice will inevitably impact the identity of the FilChi community, fostering a generation of people who have lost the resilience that FilChis have been carrying for the longest time.
             </blockquote>
+
+            <h4 class="text-white">References</h4>
+            <div style="font-size: 0.9em; word-break: break-word;">
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Po, L. (2020, June 23). <em>Our People's Tongue: the History and Future of the Hokkien Language in the Philippines.</em> The Medium. https://medium.com/@l.po/our-peoples-tongue-the-history-and-future-of-the-hokkien-language-in-the-philippines-414e0628932f</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Go, K. (2024, August 23). <em>Common Hokkien Words In Filipino Vocabulary.</em> Chinoy TV. https://www.chinoy.tv/common-hokkien-words-filipino-vocabulary/</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Gonzales, D. (2024, July 21). <em>What is 'Lannang'?</em> The Lannang Archives. www.lannangarchives.org</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Go, D. (2021, October 27). <em>Mixed Contact Immigrant Languages Are Legitimate Expressions.</em> The Lannang Archives. https://www.lannangarchives.org/post/mixed-contact-immigrant-languages-are-legitimate-expressions</p>
+            </div>
           `
         },
         {
@@ -102,6 +124,11 @@ export default {
             <blockquote class="reflection">
               <strong>Reflection:</strong> Maintaining a good relationship with my cultural heritage is important because it helps me understand who I am and my roots. In a society that is becoming more diverse, knowing my roots gives me a sense of identity. It also helps me respect and appreciate other cultures because I understand the value of traditions and history. By keeping my cultural heritage alive, I can connect with others while still staying true to myself.
             </blockquote>
+
+            <h4 class="text-white">References</h4>
+            <div style="font-size: 0.9em; word-break: break-word;">
+               <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Timothy S. Y. Lam Museum of Anthropology. (2025, January 24). <em>History of Chinese New Year.</em> https://lammuseum.wfu.edu/education/teachers/chinese-new-year/history-of-chinese-new-year/</p>
+            </div>
           `
         },
         {
@@ -128,6 +155,12 @@ export default {
             <blockquote class="reflection">
               <strong>Reflection:</strong> It is important to maintain a good relationship with our cultural heritage because it is what we are made of. When we have a bad relationship with our heritage, we become distant with the world, as we lose our core values, making us become confused about our identity as our base collapses. While on the other hand, when we have a good relation to our cultural heritage we can find and strengthen our identity. It also serves as a source of wisdom through discovering our history and using it to evolve.
             </blockquote>
+
+            <h4 class="text-white">References</h4>
+            <div style="font-size: 0.9em; word-break: break-word;">
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Lao, E. (2024, October 15). <em>The power of filial piety: A lesson from Dr. Lao.</em> Pace Academy. https://paceacademy.edu.ph/the-power-of-filial-piety-a-lesson-from-dr-lao/</p>
+              <p style="padding-left: 2em; text-indent: -2em; margin-bottom: 0.5em;">Weiming, T. (2025, November 28). <em>Confucianism | meaning, history, beliefs, & facts.</em> Britannica. https://www.britannica.com/topic/Confucianism</p>
+            </div>
           `
         }
       ]
